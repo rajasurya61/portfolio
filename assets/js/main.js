@@ -225,7 +225,7 @@ themeButton.addEventListener("click", () => {
 function submitForm(e) {
   // Get form data
   e.preventDefault();
-  var URL = "https://webhook.site/fcf3f587-7dc8-4250-b43e-0d5f971283c4";
+  var URL = "https://up8kvt8k1h.execute-api.us-east-1.amazonaws.com/contact";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name").val())) {
