@@ -983,7 +983,7 @@
           <form id="contactForm" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label class="contact__label">Name</label>
+                <label for="name" class="contact__label">Name</label>
                 <span class="contact__label">*</span>
                 <input
                   type="text"
@@ -995,7 +995,7 @@
                 />
               </div>
               <div class="contact__content">
-                <label class="contact__label">Email</label>
+                <label for="email" class="contact__label">Email</label>
                 <span class="contact__label">*</span>
                 <input
                   type="email"
@@ -1003,11 +1003,12 @@
                   id="email"
                   class="contact__input"
                   required
+                  autocomplete="@gmail.com"
                 />
               </div>
             </div>
             <div class="contact__content">
-              <label class="contact__label">Message</label>
+              <label for="message" class="contact__label">Message</label>
               <textarea
                 name="message"
                 id="message"
