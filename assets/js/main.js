@@ -225,7 +225,8 @@ themeButton.addEventListener("click", () => {
 function submitForm(e) {
   // Get form data
   e.preventDefault();
-  var URL = "https://up8kvt8k1h.execute-api.us-east-1.amazonaws.com/contact";
+  var URL =
+    "https://t38059jcj1.execute-api.us-east-1.amazonaws.com/dev/contact";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name").val())) {
