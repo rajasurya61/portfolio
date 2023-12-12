@@ -258,7 +258,7 @@ function submitForm(e) {
     type: "POST",
     url: URL,
     dataType: "json",
-    crossDomain: false, // Fix here
+    crossDomain: true, // Fix here
     contentType: "application/json; charset=utf-8",
     data: JSON.stringify(data),
 
