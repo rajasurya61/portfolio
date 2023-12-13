@@ -1,3 +1,5 @@
+/*global _config*/
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -225,8 +227,7 @@ themeButton.addEventListener("click", () => {
 function submitForm(e) {
   // Get form data
   e.preventDefault();
-  var URL =
-    "https://t38059jcj1.execute-api.us-east-1.amazonaws.com/dev/contact";
+  var URL = _config.api.invokeUrl;
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name").val())) {
@@ -264,13 +265,13 @@ function submitForm(e) {
 
     success: function () {
       // clear form and show a success message
-      alert("Successful");
+      alert("Pradeep Will Contact you soon!");
       document.getElementById("contactForm").reset();
       location.reload();
     },
     error: function () {
       // show an error message
-      alert("Unsuccessful");
+      alert("This website is facing difficulty, please try again!");
     },
   });
 }
