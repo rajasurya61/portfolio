@@ -3,7 +3,7 @@
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-const phrases = ["Software Engineer", "Data Engineer"];
+const phrases = ["Software Engineer"];
 const element = document.getElementById("typewriter");
 let sleepTime = 100;
 let curPhraseIndex = 0;
